@@ -3,7 +3,7 @@ galaxy_info:
   description: Generate /etc/motd with Cowsay
   company: IIS
   license: license (GPL-2.0-or-later, MIT, etc)
-  min_ansible_version: 2.4
+  min_ansible_version: 2.7
 
   platforms:
   - name: EL
