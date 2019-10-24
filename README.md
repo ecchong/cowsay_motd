@@ -1,7 +1,7 @@
 Role Name
 =========
 
-The cow say motd
+The cow says motd
 
 Requirements
 ------------
