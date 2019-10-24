@@ -1,0 +1,8 @@
+---
+- hosts: aws
+  remote_user: ec2-user
+  become: true
+
+  roles:
+    - role: cowsay_motd
+      cowsay_motd_message: Bye Bye

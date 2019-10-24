@@ -1,0 +1,5 @@
+---
+- name: RHEL 7 server
+  include_tasks: rhel7.yml
+  when:
+  - ansible_os_family == "RedHat"

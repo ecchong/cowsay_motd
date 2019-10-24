@@ -1,0 +1,15 @@
+---
+- name: Make sure cowsay is installed
+  yum:
+    name: "{{ cowsay_motd_rhel7_rpm }}"
+
+- name: Generate cowsay message
+  command: cowsay "{{ cowsay_motd_message }}"
+  register: cowsay_message
+
+- name: Create new /etc/motd
+  copy:
+    dest: /etc/motd
+    content: |
+      {{ cowsay_message.stdout }}
+    backup: true

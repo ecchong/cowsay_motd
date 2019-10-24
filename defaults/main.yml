@@ -1,0 +1,4 @@
+---
+# defaults file for cowsay_motd
+cowsay_motd_rhel7_rpm: http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/c/cowsay-3.04-4.el7.noarch.rpm
+cowsay_motd_message: "Get off my server!"
